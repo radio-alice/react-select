@@ -1,0 +1,39 @@
+.select {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  box-sizing: border-box;
+}
+.select .head {
+  border-radius: 5px;
+  padding: 0.25rem;
+  border: solid 2px #d3d3d3;
+  background-color: white;
+  display: flex;
+}
+.select .head .selection {
+  flex: 1;
+}
+.select .head button {
+  background-color: none;
+  border: none;
+}
+/* no absolute positioning– content below moves down when opened */
+/* this leads to better usability as the user can read the content while the menu is open */
+.select .menu {
+  border: solid 2px #d3d3d3;
+  padding: 0;
+  background-color: white;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
+option {
+  padding: 0.25rem;
+}
+option:hover {
+  background-color: #e9e8e8;
+}
+option.selected {
+  background-color: #d3d3d3;
+}
