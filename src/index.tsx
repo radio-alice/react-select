@@ -10,7 +10,7 @@ const Basic = () => {
     <div style={{ maxWidth: '60ch', margin: '2rem auto' }}>
       <p>{selected}</p>
       <Select
-        options={['hey', 'hi', 'wtf is a monad', 'use rust']}
+        options={['hey', 'hi', 'what actually is a monad', 'use rust']}
         onSelect={(selection) => setSelected(selection as string)}
       />
     </div>
@@ -28,7 +28,7 @@ const OptsAsObjects = () => {
       value: 'hi',
     },
     {
-      label: 'wtf is a monad',
+      label: 'what actually is a monad',
       value: 'monad',
     },
     {
