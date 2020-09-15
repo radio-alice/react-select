@@ -5,9 +5,10 @@ import Select from './lib/App'
 import { OptionInterface } from './lib'
 
 const Basic = () => {
-  let [selected, setSelected] = useState('')
+  let [selected, setSelected] = useState('hey')
   return (
     <div style={{ maxWidth: '60ch', margin: '2rem auto' }}>
+      <h2>options as strings</h2>
       <p>{selected}</p>
       <Select
         options={['hey', 'hi', 'what actually is a monad', 'use rust']}
@@ -39,6 +40,7 @@ const OptsAsObjects = () => {
   let [selected, setSelected] = useState(opts[0])
   return (
     <div style={{ maxWidth: '60ch', margin: '2rem auto' }}>
+      <h2>options as objects</h2>
       <p>{selected.label}</p>
       <Select
         options={opts}
