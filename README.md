@@ -41,3 +41,29 @@ let opts: OptionInterface[] = [
 ```
 
 More fleshed out examples can be found in [src/index.tsx](src/index.tsx)
+
+To play with the demo:
+
+```bash
+git clone https://github.com/radio-alice/react-select
+cd react-select
+yarn && yarn start
+```
+
+I'm not going to publish this as an npm/yarn module, but that would obviously the best way to distribute this as a library.
+
+To use in your own projects (without npm/yarn):
+
+```bash
+cd <your project folder>/src
+git clone https://github.com/radio-alice/react-select
+```
+and then import the component with:
+```ts
+import Select from ./react-select
+```
+
+and the `OptionInterface` type (a type for the option objects) with:
+```ts
+import type { OptionInterface } from ./react-select
+```
