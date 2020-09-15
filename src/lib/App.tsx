@@ -20,7 +20,7 @@ const Select = ({ options, onSelect }: Props) => {
     <div className='select'>
       <div className='head' onClick={(_) => setOpen(!open)}>
         <div className='selection'>{selection.label}</div>
-        <button>V</button>
+        <button>{open ? '▼' : '▶︎'}</button>
       </div>
       {open ? (
         <div className='menu'>

@@ -16,8 +16,10 @@
   flex: 1;
 }
 .select .head button {
-  background-color: none;
+  background: none;
   border: none;
+  color: #989898;
+  font-size: 1rem;
 }
 /* no absolute positioning– content below moves down when opened */
 /* this leads to better usability as the user can read the content while the menu is open */
